@@ -1,0 +1,98 @@
+.specials-container {
+    height: 100%;
+    padding: 2.5rem 0rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specials-top {
+    display: grid;
+    grid-template-columns: 80fr 15fr;
+    align-items: center;
+}
+
+.specials-top h1 {
+    font-size: 64px;
+    font-weight: 500;
+    font-family: 'Markazi Text', serif;
+}
+
+.online-btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 16px;
+    border: none;
+    background-color: #f4ce14;
+    color: black;
+    font-size: 18px;
+    font-family: 'Karla', serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.specials-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.card-container {
+    display: grid;
+    margin: 0 3rem;
+    border-radius: 16px 16px 0 0;
+    width: 265px;
+    height: 439px;
+}
+
+.card-container img {
+    border-radius: 16px 16px 0 0;
+}
+
+.specials-content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: -2rem 1rem 0 1rem;
+}
+
+.specials-content-header h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Markazi Text', serif;
+    margin-top: 0;
+}
+
+.specials-content-header h3 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Karla', serif;
+    color: #ee9972;
+}
+
+.specials-content-body {
+    margin: 0 1rem;
+}
+
+.specials-content-body p {
+    padding-bottom: 2rem;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Karla', serif;
+    color: #495e57;
+}
+
+.specials-btn {
+    width: 150px;
+    height: 30px;
+    background-color: #f4ce14;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Karla', serif;
+}

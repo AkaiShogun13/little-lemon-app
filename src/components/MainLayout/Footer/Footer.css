@@ -1,0 +1,50 @@
+.footer-menu {
+    background: #495e57;
+    height: 100%;
+    width: 100%;
+}
+
+.footer-container {
+    display: grid;
+    padding: 2rem 0;
+    max-width: 65rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+    width: 100%;
+    grid-column-gap: 1.5rem;
+}
+
+.footer-logo {
+    margin-top: 1rem;
+}
+
+.footer-container h3 {
+    color: #f4ce14;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+li {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Karla', sans-serif;
+}
+
+.footer-link:hover {
+    color: #f4ce14;
+}

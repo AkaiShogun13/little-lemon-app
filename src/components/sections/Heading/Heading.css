@@ -1,0 +1,66 @@
+.hero {
+    background: #495e57;
+    height: 100%;
+    display: flex;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    height: 100%;
+    max-width: 65rem;
+    padding: 2rem 0;
+    align-items: center;
+    column-gap: 2rem;
+    margin: 0 auto;
+}
+
+.hero-text {
+    margin: 0 1rem
+}
+
+.hero-img {
+    margin: 0 3rem;
+}
+
+.image {
+    border-radius: 16px;
+}
+
+.hero-text h1 {
+    color: #f4ce14;
+    font-size: 56px;
+    font-weight: 500;
+    font-family: 'Markazi Text', serif;
+    margin:auto
+}
+
+.hero-text h2 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'Markazi Text', serif;
+    margin: auto;
+}
+
+.hero-text p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Markazi Text', serif;
+    margin: auto;
+    padding-right: 6rem;
+}
+
+.reserv-btn {
+    width: 200px;
+    height: 43px;
+    border-radius: 16px;
+    border: none;
+    background-color: #f4ce14;
+    color: black;
+    font-size: 18px;
+    font-family: 'Karla', serif;
+    font-weight: 500;
+    cursor: pointer;
+}
