@@ -1,36 +1,42 @@
 import NavLogo from "../../../assets/nav-logo.png"
+import Homepage from "../../pages/Homepage";
+import About from "../../pages/About"
+import Menu from "../../pages/Menu"
+import Reservation from "../../pages/Reservation"
+import OrderOnline from "../../pages/OrderOnline"
+import Login from "../../pages/Login"
 import "./Navbar.css"
+import React from "react"
+import {Link, Routes, Route} from "react-router-dom"
 
 function Navbar() {
     return (
-        <nav className="nav-menu">
-            <img src={NavLogo}
-                 className="nav-logo"
-                 alt="Little Lemon logo"
-                 width={195}
-                 height={53}>
-            </img>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">Menu</a>
-                </li>
-                <li>
-                    <a href="/">Reservation</a>
-                </li>
-                <li>
-                    <a href="/">Order Online</a>
-                </li>
-                <li>
-                    <a href="/">Login</a>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <nav className="nav-menu">
+                <img src={NavLogo}
+                    className="nav-logo"
+                    alt="Little Lemon logo"
+                    width={195}
+                    height={53}>
+                </img>
+                <ul>
+                    <Link to="/" className="nav-list">Home</Link>
+                    <Link to="/about" className="nav-list">About</Link>
+                    <Link to="/menu" className="nav-list">Menu</Link>
+                    <Link to="/reservation" className="nav-list">Reservation</Link>
+                    <Link to="/orderOnline" className="nav-list">Order Online</Link>
+                    <Link to="/login" className="nav-list">Login</Link>
+                </ul>
+            </nav>
+            <Routes>
+                <Route path="/" element={<Homepage/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/menu" element={<Menu/>} />
+                <Route path="/reservation" element={<Reservation/>} />
+                <Route path="/orderonline" element={<OrderOnline/>} />
+                <Route path="/login" element={<Login/>} />
+            </Routes>
+        </div>
     );
 }
 

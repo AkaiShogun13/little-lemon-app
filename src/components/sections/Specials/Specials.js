@@ -1,3 +1,4 @@
+import React from "react";
 import SpecialsCard from "../../cards/SpecialsCard"
 import GreekSalad from "../../../assets/greek-salad.jpg"
 import Bruschetta from "../../../assets/bruschetta.jpg"

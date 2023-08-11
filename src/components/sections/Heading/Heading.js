@@ -1,3 +1,4 @@
+import React from "react";
 import HeroImg from "../../../assets/hero-img.jpg"
 import "./Heading.css"
 

@@ -1,8 +1,7 @@
 import Heading from "../sections/Heading/Heading";
 import Specials from "../sections/Specials/Specials";
 import Testimonial from "../sections/Testimonials/Testimonial";
-import About from "../sections/About/About"
-
+import AboutUs from "../sections/AboutUs/AboutUs"
 
 function Homepage() {
     return (
@@ -10,7 +9,7 @@ function Homepage() {
             <Heading />
             <Specials />
             <Testimonial />
-            <About />
+            <AboutUs />
         </>
     )
 }

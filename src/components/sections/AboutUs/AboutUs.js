@@ -1,8 +1,9 @@
+import React from "react";
 import ChefImage from "../../../assets/chefs1.jpg"
 import ChefImage2 from "../../../assets/chefs2.jpg"
-import './About.css'
+import './AboutUs.css'
 
-function About() {
+function AboutUs() {
     return (
         <article className="about-container">
             <section className="about-text">
@@ -28,4 +29,4 @@ function About() {
     )
 }
 
-export default About
+export default AboutUs

@@ -28,7 +28,7 @@
     margin: 0 0 1rem 0;
 }
 
-li {
+.footer-list {
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
@@ -38,11 +38,20 @@ li {
     display: flex;
 }
 
+.footer-list:hover {
+    color: #f4ce14;
+}
+
 .footer-link {
     color: #ffffff;
     font-size: 20px;
     font-weight: 500;
     font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+
+.footer-socials li {
+    margin: 0.5rem 0;
 }
 
 .footer-link:hover {

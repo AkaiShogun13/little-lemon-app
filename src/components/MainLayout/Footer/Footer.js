@@ -1,3 +1,5 @@
+import React from "react"
+import {Link} from "react-router-dom"
 import FooterLogo from "../../../assets/footer-logo.png"
 import "./Footer.css"
 
@@ -14,32 +16,20 @@ function Footer() {
                 <section className="footer-sitemap">
                     <ul>
                         <h3>Sitemap</h3>
-                        <li>
-                            <a className="footer-link" href="/">Home</a>
-                        </li>
-                        <li>
-                            <a className="footer-link" href="/">About</a>
-                        </li>
-                        <li>
-                            <a className="footer-link" href="/">Menu</a>
-                        </li>
-                        <li>
-                            <a className="footer-link" href="/">Reservation</a>
-                        </li>
-                        <li>
-                            <a className="footer-link" href="/">Order Online</a>
-                        </li>
-                        <li>
-                            <a className="footer-link" href="/">Login</a>
-                        </li>
+                        <Link to="/" className="footer-list">Home</Link>
+                        <Link to="/About" className="footer-list">About</Link>
+                        <Link to="/Menu" className="footer-list">Menu</Link>
+                        <Link to="/Reservation" className="footer-list">Reservation</Link>
+                        <Link to="/OrderOnline" className="footer-list">Order Online</Link>
+                        <Link to="/Login" className="footer-list">Login</Link>
                     </ul>
                 </section>
                 <section className="footer-contact">
                     <ul>
                         <h3>Contact</h3>
-                        <li>Address</li>
-                        <li>Phone Number</li>
-                        <li>Email</li>
+                        <li className="footer-list">Address</li>
+                        <li className="footer-list">Phone Number</li>
+                        <li className="footer-list">Email</li>
                     </ul>
                 </section>
                 <section className="footer-socials">
