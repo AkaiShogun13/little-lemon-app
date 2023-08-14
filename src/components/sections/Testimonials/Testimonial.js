@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialsCards from "../../cards/TestimonialsCard"
+import TestimonialsCards from "../../SubComponents/TestimonialsCard"
 import './Testimonial.css'
 
 function Testimonial() {
