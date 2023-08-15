@@ -1,5 +1,5 @@
 import React from "react";
-import SpecialsCard from "../../SubComponents/SpecialsCard"
+import SpecialsCard from "../../SubComponents/SpecialsCard/SpecialsCard"
 import GreekSalad from "../../../assets/greek-salad.jpg"
 import Bruschetta from "../../../assets/bruschetta.jpg"
 import LemonDessert from "../../../assets/lemon-dessert.jpg"
