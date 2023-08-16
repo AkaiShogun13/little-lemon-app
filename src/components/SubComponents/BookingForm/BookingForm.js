@@ -31,7 +31,7 @@ const BookingForm = ({
 
     return (
         <>
-        <section className="form1">
+        <section className="form form1">
             <h1>Make A Reservation</h1>
             <form onSubmit={(e) => onFormSubmit(e, formValues)}>
                 <div className="reservation-container">
@@ -134,7 +134,7 @@ const BookingForm = ({
                 </div>
             </form>
         </section>
-        <section className="form2">
+        <section className="form form2">
             <h1>Your Details</h1>
             <form></form>
         </section>

@@ -11,12 +11,6 @@
     border-radius: 16px;
 }
 
-.form1 h1 {
-    color: #F4CE14;
-    font-size: 64px;
-    font-family: "Markazi Text", serif;
-    font-weight: 500;
-}
 
 .item-title {
     color: #628470;
@@ -36,4 +30,11 @@
     max-width: 65rem;
     margin: 7rem auto 6rem auto;
     border-radius: 16px;
+}
+
+.form h1, h2 {
+    color: #F4CE14;
+    font-size: 64px;
+    font-family: "Markazi Text", serif;
+    font-weight: 500;
 }
