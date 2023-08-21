@@ -124,11 +124,10 @@ input {
     width: 150px;
 }
 
-
-input[type='date']::-webkit-calendar-picker-indicator {
+/* input[type='date']::-webkit-calendar-picker-indicator {
     background: transparent;
     cursor: pointer;
-}
+} */
 
 .label-icon {
     margin-right: 1rem;

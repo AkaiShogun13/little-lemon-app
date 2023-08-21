@@ -1,12 +1,11 @@
 import BookingForm from "./BookingForm";
 import {render, screen} from "@testing-library/react";
-import React from "react";
-import { mockComponent } from "react-dom/test-utils";
+import "@testing-library/jest-dom"
 
 test("Renders the BookingForm headings",() => {
-    render(<BookingForm />);
     const headingElement = screen.getByText("Make A Reservation");
     expect(headingElement).toBeInTheDocument();
+    render(<BookingForm />);
 });
 
 test("Render the BookingForm component",() => {
