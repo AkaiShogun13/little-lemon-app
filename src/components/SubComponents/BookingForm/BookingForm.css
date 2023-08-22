@@ -24,7 +24,7 @@
     border-radius: 16px;
 }
 
-.form h1, h2 {
+.form h1 {
     color: #F4CE14;
     font-size: 64px;
     font-family: "Markazi Text", serif;
@@ -163,37 +163,22 @@ textarea {
     width: 680px;
     height: 166px;
     border-radius: 16px;
+    font-family: "Karla", serif;
+    font-size: 20px;
+    padding: 15px 0 0 15px;
 }
 
 textarea::placeholder {
     font-size: 20px;
     font-family: "Karla", serif;
     color:#495E57;
-    padding: 7px 0 0 7px;
 }
 
-.btn-container {
-    margin-bottom: 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
 }
 
-.submit-btn {
-    width: 420px;
-    height: 80px;
-    background-color: #F4CE14;
-    border: none;
-    border-radius: 16px;
-    font-size: 30px;
-    font-family: "Karla", serif;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s ease-in;
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
 }
 
-.submit-btn:hover {
-    background-color: #495E57;
-    color: #ffffff;
-    transition: 0.2s ease-in;
-}

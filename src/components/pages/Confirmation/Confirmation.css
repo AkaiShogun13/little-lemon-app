@@ -1,0 +1,27 @@
+.container {
+    background-color: #495E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 512px;
+    width: 660px;
+    max-width: 65rem;
+    margin: 7rem auto 6rem auto;
+    border-radius: 16px;
+}
+
+.confirmation-title {
+    color: #F4CE14;
+    font-size: 40px;
+    font-family: "Markazi Text", serif;
+    font-weight: 500;
+    margin: 0 auto 1rem auto;
+}
+
+.confirmation-content {
+    font-size: 24px;
+    font-family: "Karla", serif;
+    font-weight: 500;
+    color: #ffffff;
+}

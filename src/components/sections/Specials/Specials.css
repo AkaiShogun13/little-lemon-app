@@ -31,6 +31,12 @@
     font-family: 'Karla', serif;
     font-weight: 500;
     cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.online-btn:hover {
+    transform: scale(1.03);
+    transition: 0.1s ease;
 }
 
 .specials-card {
@@ -96,4 +102,11 @@
     font-weight: 500;
     font-family: 'Karla', serif;
     cursor: pointer;
+    box-shadow: #64646f33 0px 7px 29px 0px;
+    transition: 0.01s ease-in-out;
+}
+
+.specials-btn:hover {
+    transform: scale(1.03);
+    transition: 0.1s ease-in-out;
 }

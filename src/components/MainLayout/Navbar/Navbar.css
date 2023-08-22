@@ -12,6 +12,7 @@
 
 .nav-logo {
     height: 50px;
+    cursor: pointer;
 }
 
 li {

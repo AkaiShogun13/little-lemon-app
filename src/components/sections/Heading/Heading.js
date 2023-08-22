@@ -1,8 +1,14 @@
 import React from "react";
 import HeroImg from "../../../assets/hero-img.jpg"
 import "./Heading.css"
+import { useNavigate } from "react-router-dom";
 
 function Heading() {
+    const navigate = useNavigate()
+    const navigateToReservation = () => {
+        navigate("/reservation");
+    }
+
     return (
         <article className="hero">
             <section className="hero-container">
@@ -11,7 +17,7 @@ function Heading() {
                     <h2>Chicago</h2>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
                     <br></br>
-                    <button className="reserv-btn">Reserve a table</button>
+                    <button onClick={navigateToReservation} className="reserv-btn">Reserve a table</button>
                 </span>
                 <span className="hero-img">
                     <img src={HeroImg}

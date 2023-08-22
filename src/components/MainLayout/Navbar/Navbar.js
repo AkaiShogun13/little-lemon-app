@@ -7,9 +7,14 @@ import OrderOnline from "../../pages/OrderOnline"
 import Login from "../../pages/Login"
 import "./Navbar.css"
 import React from "react"
-import {Link, Routes, Route} from "react-router-dom"
+import {Link, Routes, Route, useNavigate} from "react-router-dom"
 
 function Navbar() {
+    const navigate = useNavigate();
+    const onClickImg = () => {
+        navigate("/")
+    }
+
     return (
         <div>
             <nav className="nav-menu">
@@ -17,7 +22,9 @@ function Navbar() {
                     className="nav-logo"
                     alt="Little Lemon logo"
                     width={195}
-                    height={53}>
+                    height={53}
+                    onClick={onClickImg}>
+                    
                 </img>
                 <ul>
                     <Link to="/" className="nav-list">Home</Link>

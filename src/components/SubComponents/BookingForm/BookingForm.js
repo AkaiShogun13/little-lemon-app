@@ -1,7 +1,9 @@
 import React, {useState} from "react"
 import "./BookingForm.css"
+import Button from "../../SubComponents/BookingForm/Button/Button"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../../components/icons/FontAwesomeIcons';
+
 
 const BookingForm = ({
     onFormSubmit,
@@ -33,17 +35,13 @@ const BookingForm = ({
             });
         };
 
-        const handleClick = (e) => {
-            e.preventDefault()
-        }
-
         return (
             <>
             <section className="form form1">
                 <h1>Make A Reservation</h1>
                 <form onSubmit={(e) => onFormSubmit(e, formValues)}>
                     <div className="reservation-container">
-                        <label for="guests" className="item-title item1-title">
+                        <label htmlFor="guests" className="item-title item1-title">
                             <span className="label-icon">
                                 <FontAwesomeIcon icon="fa-regular fa-user" style={{color: "#628470",}} />
                             </span>
@@ -69,7 +67,7 @@ const BookingForm = ({
                         </select>
                     </div>
                     <div className="reservation-container">
-                        <label for="date" className="item-title item1-title">
+                        <label htmlFor="date" className="item-title item1-title">
                             <span className="label-icon">
                                 <FontAwesomeIcon icon="fa-regular fa-calendar" style={{color: "#628470",}} />
                             </span>
@@ -83,7 +81,7 @@ const BookingForm = ({
                             className={isFormSubmitted && !formValues.date ? "error" : ""} />
                     </div>
                     <div className="reservation-container">
-                        <label for="time" className="item-title item1-title">
+                        <label htmlFor="time" className="item-title item1-title">
                             <span className="label-icon">
                                 <FontAwesomeIcon icon="fa-regular fa-clock" style={{color: "#628470",}} />
                             </span>
@@ -101,7 +99,7 @@ const BookingForm = ({
                     </div>
                     <div className="btn-layout">
                     <div className="reservation-container">
-                        <label for="seats" className="item-title btn-layout-item" >
+                        <label htmlFor="seats" className="item-title btn-layout-item" >
                             <span className="label-icon">
                                 <FontAwesomeIcon icon="fa-solid fa-chair" style={{color: "#628470",}} />
                             </span>
@@ -119,7 +117,7 @@ const BookingForm = ({
                         </select>
                     </div>
                     <div className="reservation-container">
-                        <label for="occasion" className="item-title btn-layout-item">
+                        <label htmlFor="occasion" className="item-title btn-layout-item">
                             <span className="label-icon">
                                 <FontAwesomeIcon icon="fa-solid fa-martini-glass" style={{color: "#628470",}} />
                             </span>
@@ -143,7 +141,7 @@ const BookingForm = ({
                 <h1>Your Details</h1>
                 <form method="post" onSubmit={(e) => onFormSubmit(e, formValues)}>
                     <div className="reservation-container">
-                        <label for="your-name" className="item-title item2-title item2-name">Name *</label>
+                        <label htmlFor="your-name" className="item-title item2-title item2-name">Name *</label>
                         <input
                             required
                             minLength={3}
@@ -156,7 +154,7 @@ const BookingForm = ({
                         </input>
                     </div>
                     <div className="reservation-container">
-                        <label for="phone" className="item-title item2-title">Phone *</label>
+                        <label htmlFor="phone" className="item-title item2-title">Phone *</label>
                         <input
                             required
                             autoComplete="tel"
@@ -168,7 +166,7 @@ const BookingForm = ({
                         </input>
                     </div>
                     <div className="reservation-container">
-                        <label for="email" className="item-title item2-title">Email *</label>
+                        <label htmlFor="email" className="item-title item2-title">Email *</label>
                         <input
                             required
                             autoComplete="email"
@@ -195,14 +193,7 @@ const BookingForm = ({
                 </form>
             </section>
             <div className="btn-container">
-                <button
-                    className="submit-btn"
-                    value="Submit"
-                    type="submit"
-                    onClick={handleClick}
-                >
-                Submit
-                </button>
+                <Button title="Submit" type="submit" />
             </div>
             </>
         )

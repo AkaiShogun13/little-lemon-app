@@ -1,0 +1,25 @@
+.btn-container {
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    width: 420px;
+    height: 80px;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 16px;
+    font-size: 30px;
+    font-family: "Karla", serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.submit-btn:hover {
+    background-color: #495E57;
+    color: #ffffff;
+    transition: 0.2s ease-in;
+}
