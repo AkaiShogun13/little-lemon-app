@@ -57,3 +57,34 @@
 .footer-link:hover {
     color: #f4ce14;
 }
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-top: 0.5rem;
+
+    }
+
+    .footer-container h3 {
+        font-size: 18px;
+        margin: 0.5rem 0;
+    }
+
+    .footer-list,
+    .footer-link {
+        font-size: 16px;
+        margin: 0.3rem 0;
+        padding: 0.2rem 0;
+        display: grid;
+    }
+
+    .footer-socials li {
+        margin: 0.3rem 0;
+    }
+}

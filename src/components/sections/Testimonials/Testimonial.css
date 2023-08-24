@@ -46,9 +46,9 @@
 
 
 .testimonial-card img {
-    margin: 0 0.5rem;
+    margin: 1.5rem 0.8rem;
     width: 70px;
-    height: 70px;
+    height: 20px;
 }
 
 
@@ -58,4 +58,27 @@
     font-family: 'Markazi Text', serif;
     margin: auto;
     color: #f4ce14;
+}
+
+@media screen and (max-width: 767px) {
+    .testimonials-container {
+        height: 500px;
+        padding: 2.5rem 0rem;
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        text-align: center;
+    }
+    .testimonials-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem 0;
+    }
+    .testimonial-card {
+        margin: 1rem;
+        width: 156px;
+        height: 168px;
+        background-color: #ffffff;
+        border-radius: 16px;
+    }
 }

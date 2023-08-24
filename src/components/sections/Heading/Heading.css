@@ -70,3 +70,46 @@
     transform: scale(1.03);
     transition: 0.1s ease;
 }
+
+@media screen and (max-width: 767px) {
+    .hero-container {
+        grid-template-columns: auto; /* Reset grid columns for mobile */
+        column-gap: 0; /* Reset column gap for mobile */
+        padding: 2rem 1rem; /* Adjust padding for mobile */
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .hero-text h1 {
+        font-size: 28px; /* Adjust font size for mobile */
+    }
+
+    .hero-text h2 {
+        font-size: 20px; /* Adjust font size for mobile */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 0; /* Reset padding for mobile */
+    }
+
+    .hero-img {
+        margin: 1rem auto; /* Adjust margin for mobile */
+    }
+
+    .image {
+        border-radius: 16px;
+        max-width: 100%; /* Allow images to scale down on mobile */
+        height: auto; /* Automatically adjust height based on width */
+    }
+
+    .reserv-btn {
+        width: 140px; /* Adjust button width for mobile */
+        height: 38px; /* Adjust button height for mobile */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .reserv-btn:hover {
+        transform: none; /* Remove the scale effect on hover for mobile */
+        transition: none; /* Remove transition for mobile */
+    }
+}

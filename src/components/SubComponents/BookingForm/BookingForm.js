@@ -52,7 +52,7 @@ const BookingForm = ({
                             name="guests"
                             placeholder="No. of guests"
                             onChange={handleInputChange}
-                            className={isFormSubmitted && !formValues.occasion ? "error" : ""}>
+                            className={isFormSubmitted && !formValues.guests ? "error" : ""}>
 
                             <option value="" disabled selected>No. of guests</option>
                             <option value="2">2</option>
@@ -105,7 +105,6 @@ const BookingForm = ({
                             </span>
                         </label>
                         <select
-                            required
                             id="seats"
                             name="seats"
                             onChange={handleInputChange}

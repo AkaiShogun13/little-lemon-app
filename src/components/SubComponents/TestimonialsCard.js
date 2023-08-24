@@ -1,4 +1,4 @@
-import Star from "../../assets/star.png"
+import Star from "../../assets/star1.png"
 
 function TestimonialsCards(props) {
     return (
