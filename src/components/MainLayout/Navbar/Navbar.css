@@ -8,6 +8,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin: 0 auto;
+    font-family: "Karla", serif;
 }
 
 .nav-logo {
@@ -25,18 +26,67 @@ nav ul {
 }
 
 ul li {
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
-.nav-list {
+
+.link {
     text-decoration: none;
     color: #000000;
     font-size: 20px;
     font-family: 'Karla', sans-serif;
     font-weight:500;
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 a:hover {
     color: #495e57;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        justify-content: space-between;
+        background-color: white;
+        padding: 1rem 1rem;
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        width: -webkit-fill-available;
+        margin: 0 auto;
+        position: fixed;
+    }
+
+      .menu-list {
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 1rem;
+        display: none;
+    }
+
+      .nav.open .menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+      .toggle-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+      ul li a {
+        margin-left: 1rem;
+        color: #000000;
+        text-decoration: none;
+        font-family: "Karla", serif;
+        font-size: 1.1em;
+    }
 }

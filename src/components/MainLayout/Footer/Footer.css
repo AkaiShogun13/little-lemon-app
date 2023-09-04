@@ -58,33 +58,18 @@
     color: #f4ce14;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .footer-menu {
+        display: flex;
+        width: 100%;
+    }
     .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 0;
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .footer-logo {
-        margin-top: 0.5rem;
-
-    }
-
-    .footer-container h3 {
-        font-size: 18px;
-        margin: 0.5rem 0;
-    }
-
-    .footer-list,
-    .footer-link {
-        font-size: 16px;
-        margin: 0.3rem 0;
-        padding: 0.2rem 0;
+        width: 100%;
         display: grid;
+        grid-template-columns: 20fr 20fr;
+        align-items: center;
+        justify-content: center;
     }
-
-    .footer-socials li {
-        margin: 0.3rem 0;
+    .footer-logo {
     }
 }

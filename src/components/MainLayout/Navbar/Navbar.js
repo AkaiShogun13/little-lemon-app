@@ -1,13 +1,8 @@
 import NavLogo from "../../../assets/nav-logo.png"
-import Homepage from "../../pages/Homepage";
-import About from "../../pages/About"
-import Menu from "../../pages/Menu"
-import Reservation from "../../pages/Reservation"
-import OrderOnline from "../../pages/OrderOnline"
-import Login from "../../pages/Login"
 import "./Navbar.css"
-import React from "react"
-import {Link, Routes, Route, useNavigate} from "react-router-dom"
+import React, {useState} from "react"
+import {useNavigate} from "react-router-dom"
+import MenuIcon from "../../../assets/hamburger-menu.svg"
 
 
 
@@ -17,35 +12,46 @@ function Navbar() {
         navigate("/")
     };
 
+    const[isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    };
+
+    const navMenuItems = [
+        {id: 1, label: "Home", link: "/"},
+        {id: 2, label: "About", link: "/about"},
+        {id: 3, label: "Menu", link: "/menu"},
+        {id: 4, label: "Reservation", link: "/reservation"},
+        {id: 5, label: "Order Online", link: "/orderonline"},
+        {id: 6, label: "Login", link: "/login"}
+    ];
+
     return (
-        <div>
-            <nav className="nav-menu">
-                <img src={NavLogo}
-                    className="nav-logo"
-                    alt="Little Lemon logo"
-                    width={195}
-                    height={53}
-                    onClick={onClickImg}>
-                </img>
-                <ul>
-                    <Link to="/" className="nav-list">Home</Link>
-                    <Link to="/about" className="nav-list">About</Link>
-                    <Link to="/menu" className="nav-list">Menu</Link>
-                    <Link to="/reservation" className="nav-list">Reservation</Link>
-                    <Link to="/orderOnline" className="nav-list">Order Online</Link>
-                    <Link to="/login" className="nav-list">Login</Link>
+        <div className="nav-menu">
+            <img src={NavLogo}
+                 className="nav-logo"
+                 alt="Little Lemon logo"
+                 width={195}
+                 height={53}
+                 onClick={onClickImg}>
+            </img>
+            <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
+                <ul className={`menu-list ${isMenuOpen ? "open" : ""}`}>
+                    {navMenuItems.map(item => (
+                        <li key={item.id}>
+                            <a href={item.link} className="link">
+                                {item.label}
+                            </a>
+                        </li>
+                    ))}
                 </ul>
             </nav>
-            <Routes>
-                <Route path="/" element={<Homepage/>} />
-                <Route path="/about" element={<About/>} />
-                <Route path="/menu" element={<Menu/>} />
-                <Route path="/reservation" element={<Reservation/>} />
-                <Route path="/orderonline" element={<OrderOnline/>} />
-                <Route path="/login" element={<Login/>} />
-            </Routes>
+            <div className="toggle-menu" onClick={toggleMenu}>
+                <img src={MenuIcon} alt="hamburger-menu-icon" />
+            </div>
         </div>
-    );
+    )
 }
 
 export default Navbar

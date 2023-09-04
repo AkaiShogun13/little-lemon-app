@@ -3,11 +3,12 @@ import Footer from "../Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import Confirmation from "../../pages/Confirmation/Confirmation";
 
-function MainCont(){
+function MainCont({children}){
     return (
         <>
             <Navbar />
             <main>
+                {children}
                 <Routes>
                     <Route path="/confirmation" element={<Confirmation/>} />
                 </Routes>

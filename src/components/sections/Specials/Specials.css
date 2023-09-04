@@ -110,3 +110,25 @@
     transform: scale(1.03);
     transition: 0.1s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+    .specials-top {
+        display: flex;
+        flex-direction: column;
+    }
+    .specials-top h1 {
+        margin: 2rem 0;
+    }
+    .online-btn {
+        margin-bottom: 2rem;
+        width: 180px;
+        height: 50px;
+    }
+    .specials-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-container {
+        margin-bottom: 2rem;
+    }
+}
