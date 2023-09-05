@@ -36,7 +36,7 @@ const BookingForm = ({
         };
 
         return (
-            <>
+            <article className="forms-main-container">
             <section className="form form1">
                 <h1>Make A Reservation</h1>
                 <form onSubmit={(e) => onFormSubmit(e, formValues)}>
@@ -194,7 +194,7 @@ const BookingForm = ({
             <div className="btn-container">
                 <Button title="Submit" type="submit" />
             </div>
-            </>
+            </article>
         )
  }
 
